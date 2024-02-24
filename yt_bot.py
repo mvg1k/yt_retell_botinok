@@ -1,7 +1,6 @@
 from dotenv import load_dotenv
 import os
 import telebot  # tg api library
-from gensim.summarization import summarize
 
 load_dotenv()  # .env
 
