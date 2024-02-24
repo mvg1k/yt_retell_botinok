@@ -5,7 +5,6 @@ import os
 
 load_dotenv() #get .env variables
 
-youtube_url='link on youtube video'
 
 def extract_video_id(youtube_url):
     # searching for id in URL
@@ -24,7 +23,7 @@ def extract_video_id(youtube_url):
     return None
 
 
-id = extract_video_id('https://www.youtu.be/2K2P1Syrf6Y')
+id = extract_video_id('link on yt video')
 
 
 def get_video_detail(videoID):
