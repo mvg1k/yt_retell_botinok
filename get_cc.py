@@ -23,9 +23,6 @@ def extract_video_id(youtube_url):
     return None
 
 
-id = extract_video_id('link on yt video')
-
-
 def get_video_detail(videoID):
     # access the API
     url = "https://youtube-media-downloader.p.rapidapi.com/v2/video/details"
@@ -43,7 +40,6 @@ def get_video_detail(videoID):
 
     return subtitleURL
 
-detail = get_video_detail(id)
 
 
 
@@ -57,6 +53,4 @@ def get_subtitle_text(subtitleUrl):
     response = requests.request("GET", url, headers=headers, params=querystring)
     return response.text
 
-subtitle = get_subtitle_text(detail)
-print(subtitle)
 
